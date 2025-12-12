@@ -283,11 +283,11 @@ for(let i =1; i<=5; ++i){
     alert(i)
 }
 
-var arra =["A","B", "C", "D","E","F"]
-for(let i =arra; i=arra.length; ++i){
-    alert(i)
-}
 
+var arra =["A","B", "C", "D","E","F"]
+for(let i =0; i<arra.length; ++i){
+    alert(arra[i]);
+}
 
 
 // chap 19
@@ -365,6 +365,7 @@ alert(replac)
 
 var repla = replac.replace("She","Ayesha")
 alert(repla)
+
 
 
 

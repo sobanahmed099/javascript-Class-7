@@ -5,6 +5,7 @@ var b = prompt("What's your favourite colour")
 alert("Ok Noted, " + b +  " is your favourite colour")
 
 // Chap 2
+
 var firstName = prompt("What's your first name")
 var lastName = prompt("What's your last name")
 var fullName = alert(firstName+ lastName)
@@ -18,6 +19,7 @@ alert(hobby)
 
 
 // chap # 3
+
 var c = "23"
 var d ="21"
 alert(c+d)
@@ -35,6 +37,7 @@ alert("Thank you for sharing info")
 }
 
 // // chap #4
+
 var legalName ="$li, ali_Ahmed, ali1"
 alert("Legal Variables are like: " + legalName)
 var illegalName = "@li, Ali, 1Ali"
@@ -44,6 +47,7 @@ var array = ["$li" , "ali_Ahmed", "ali1", "@li" , "Ali ", "1Ali"]
 alert(array)
 
 // chap 5
+
 var e = 12
 var f = 10
 alert(e+f)
@@ -205,65 +209,162 @@ if(zzz===0){
 
 
 
+// chap 14
+
+var age =+prompt("Enter your age");
+var hasID = confirm("Do you have ID?? click Ok for yes, cancel for No ");
+if(age >=18){
+if(hasID===true){
+    alert("alllowed")
+}else{
+    alert("Not Allowed")
+}
+}
+
+var storeNum = prompt("Store a random number")
+var eeven = storeNum%2
+if(storeNum>0){
+    if(eeven===0){
+        alert(" It is a Even Number")
+    }
+}
+
+var storeMarks = prompt("Enter marks ")
+var e = confirm("Do you have extra credit? click Ok for yes, cancel for No ")
+if(storeMarks>=50){
+if (e===true){
+    alert("You have passed ")
+}
+}
+
+
+// chap 15 
+
+var fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"];
+alert(fruits)
+var numbers = [10, 20, 30, 40, 50];
+alert("First Element: " + " " + numbers[0] + " " +  "Last Element: " + " " + numbers[4])
+var  colors = ["Red", "Blue", "Green", "Yellow", "Purple"];
+alert(colors);  
+
+
+// chap 16
+
+var fruit = ["Apple", "Banana", "Mango"];
+alert(fruit)
+fruit.push("Orange");
+alert(fruit)
+
+fruit.pop()
+alert(fruit)
+
+fruit.unshift("Pineapple")
+fruit.shift()
+alert(fruit)
+
+
+// chap 17
+
+var aA=["Ali"," Noman ", "Shahzaib", "Rayyan"]
+alert(aA)
+aA[1]="Soban Ahmed"
+alert(aA)
+
+aA.splice(2,1)
+alert(aA)
+
+aA.slice(0,1)
+alert(aA)
+
+
+// chap 18
+
+for(let i =1; i<=5; ++i){
+    alert(i)
+}
+
+var arra =["A","B", "C", "D","E","F"]
+for(let i =arra; i=arra.length; ++i){
+    alert(i)
+}
 
 
 
+// chap 19
+
+// chap 20
 
 
 
+// chap 21
+
+var string = "You have to work hard to become a succesful"
+string = string.toUpperCase()
+alert(string)
+
+var string2 ="YOU HAVE TO WORK HARD TO BECOME A SUCCESFUL"
+string = string.toLowerCase()
+alert(string)
+
+var string = "you have to work hard to become a succesful"
+string = string.charAt(0).toUpperCase() + string.slice(1);
+alert(string)
+
+// chap 22
+
+var string = "you have to work hard to become a succesful"
+alert(string.length)
+ var part = string.slice(0,3)
+alert(part)
 
 
+// chap 23
+
+var sttring = "If you love me then I love you Too"
+var find = sttring.charAt(3)
+alert(find)
+
+var text = "If you love me then I love you Too"
+var lastindex = text.lastIndexOf("o")
+alert(lastindex)
 
 
+var text = "English is a powerful Language"
+var subtext = "power"
+if(text.includes(subtext)){
+    alert("Substring found!")
+}else{
+        alert("Substring not  found!")
+}
 
 
+// chap 24
 
 
+var sstring = "Abdul- sattar Edhi is the greatest man"
+var character = sstring.charAt(2)
+alert(character)
+var laast = sstring.charAt(sstring.length-1)
+alert(laast)
+
+var teext = " Hello"
+var middle = Math.floor(teext.length / 2)
+var aaa = teext.charAt(middle)
+alert(aaa)
 
 
+// chap 25
 
+var sting = "He is beautiful"
+alert(sting)
+var replace = sting.replace("He", "She")
+alert(replace)
 
+var replac = replace.replaceAll("a","@")
+alert(replac)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+var repla = replac.replace("She","Ayesha")
+alert(repla)
 
 
 
